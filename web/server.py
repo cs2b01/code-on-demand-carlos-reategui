@@ -11,23 +11,90 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('chat.html')
+
+#create chat
+@app.route('/chat', methods = ['POST'])
+def post_chat():
+    c = json.loads(request.form['values'])
+    message = entities.Message(
+        content=c['content'],
+        user_from_id=c['user_from_id'],
+        user_to_id=c['user_to_id']
+    )
+    session = db.getSession(engine)
+    session.add(message)
+    session.commit()
+    return 'Sent Message'
+
+#read chat
+@app.route('/chat', methods = ['GET'])
+def get_chat():
+    session = db.getSession(engine)
+    dbResponse = session.query(entities.Message)
+    data = []
+    for message in dbResponse:
+        data.append(message)
+    return Response(json.dumps(data, cls=connector.AlchemyEncoder), mimetype='application/json')
+
+#update chat
+@app.route('/chat', methods = ['PUT'])
+def update_chat():
+    session = db.getSession(engine)
+    id = request.form['key']
+    message = session.query(entities.Message).filter(entities.Message.id == id).first()
+    c =  json.loads(request.form['values'])
+    for key in c.keys():
+        setattr(message, key, c[key])
+    session.add(message)
+    session.commit()
+    return 'Updated User'
+
+#delete chat
+@app.route('/chat', methods = ['DELETE'])
+def delete_chat():
+    id = request.form['key']
+    session = db.getSession(engine)
+    chats = session.query(entities.Message).filter(entities.Message.id == id)
+    for chat in chats:
+        session.delete(chat)
+    session.commit()
+    return "Chat Deleted"
+
+
+@app.route('/chat/getConversation/<id1>/and/<id2>', methods = ['GET'])
+def get_chats_id(id1, id2):
+    def sortVal(val):
+        return val["sent_on"]
+
+    db_session = db.getSession(engine)
+
+    info1 = db_session.query(entities.Message).filter(
+        entities.Message.user_from_id == id1 and
+        entities.Message.user_to_id == id2)
+
+    info2 = db_session.query(entities.Message).filter(
+        entities.Message.user_from_id == id2 and
+        entities.Message.user_to_id == id1)
+    data = []
+    try:
+        for user in info1:
+            data.append(user)
+        for user in info2:
+            data.append(user)
+        #data.sort(key=sortVal)
+        return Response(json.dumps(data, cls=connector.AlchemyEncoder), status=200, mimetype='application/json')
+    except Exception:
+        message = {'status': 404, 'message': 'Not Found'}
+        return Response(message, status=404, mimetype='application/json')
+
 
 @app.route('/static/<content>')
 def static_content(content):
     return render_template(content)
 
 
-@app.route('/users', methods = ['GET'])
-def get_users():
-    session = db.getSession(engine)
-    dbResponse = session.query(entities.User)
-    data = []
-    for user in dbResponse:
-        data.append(user)
-    return Response(json.dumps(data, cls=connector.AlchemyEncoder), mimetype='application/json')
-
-
+#users
 @app.route('/users/<id>', methods = ['GET'])
 def get_user(id):
     db_session = db.getSession(engine)
@@ -39,14 +106,7 @@ def get_user(id):
     message = { 'status': 404, 'message': 'Not Found'}
     return Response(message, status=404, mimetype='application/json')
 
-@app.route('/create_test_users', methods = ['GET'])
-def create_test_users():
-    db_session = db.getSession(engine)
-    user = entities.User(name="David", fullname="Lazo", password="1234", username="qwerty")
-    db_session.add(user)
-    db_session.commit()
-    return "Test user created!"
-
+#create users
 @app.route('/users', methods = ['POST'])
 def create_user():
     c =  json.loads(request.form['values'])
@@ -61,6 +121,42 @@ def create_user():
     session.commit()
     return 'Created User'
 
+#read users
+@app.route('/users', methods = ['GET'])
+def get_users():
+    session = db.getSession(engine)
+    dbResponse = session.query(entities.User)
+    data = []
+    for user in dbResponse:
+        data.append(user)
+    return Response(json.dumps(data, cls=connector.AlchemyEncoder), mimetype='application/json')
+
+#update users
+@app.route('/users', methods = ['PUT'])
+def update_users():
+    session = db.getSession(engine)
+    id = request.form['key']
+    user = session.query(entities.User).filter(entities.User.id == id).first()
+    c =  json.loads(request.form['values'])
+    for key in c.keys():
+        setattr(user, key, c[key])
+    session.add(user)
+    session.commit()
+    return 'Updated User'
+
+#delete users
+@app.route('/users', methods = ['DELETE'])
+def delete_user():
+    id = request.form['key']
+    session = db.getSession(engine)
+    messages = session.query(entities.User).filter(entities.User.id == id)
+    for message in messages:
+        session.delete(message)
+    session.commit()
+    return "User Deleted"\
+
+
+#authenticate
 @app.route('/authenticate', methods = ["POST"])
 def authenticate():
     time.sleep(1)
