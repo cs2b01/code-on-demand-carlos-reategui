@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16051b00-6d4f-42dd-a100-f5cc678983a2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/static/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/templates/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/layered.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/layered.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/chat.db" beforeDir="false" afterPath="$PROJECT_DIR$/web/chat.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/database/connector.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/database/connector.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/model/entities.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/model/entities.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/server.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/templates/chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/chat.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/templates/chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/chat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/crud_users.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/crud_users.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/crud_users.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/crud_users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/login.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+            <state relative-caret-position="342">
+              <caret line="137" selection-start-line="137" selection-end-line="137" />
               <folding>
                 <element signature="e#0#77#0" expanded="true" />
               </folding>
@@ -34,68 +34,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/templates/crud_chat.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="396">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/templates/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-867">
-              <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+            <state relative-caret-position="-265">
               <folding>
-                <element signature="n#style#0;n#img#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#1;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#2;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#4;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#1;n#div#4;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#2;n#div#4;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/templates/login.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/templates/chat.html">
+        <entry file="file://$PROJECT_DIR$/web/templates/login.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+            <state relative-caret-position="365">
+              <caret line="88" column="1" selection-start-line="88" selection-start-column="1" selection-end-line="88" selection-end-column="1" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/templates/crud_users.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/templates/crud_users.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="45" column="3" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/templates/crud_chat.js">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -110,6 +76,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>bootstrap-css</find>
+      <find>loadMe</find>
+      <find>loadME</find>
+      <find>form-label-group</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -122,20 +91,20 @@
         <option value="$PROJECT_DIR$/web/templates/fail.html" />
         <option value="$PROJECT_DIR$/web/templates/loign.js" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/web/templates/login.css" />
         <option value="$PROJECT_DIR$/web/templates/login.js" />
         <option value="$PROJECT_DIR$/web/templates/login2.html" />
-        <option value="$PROJECT_DIR$/web/templates/login.html" />
         <option value="$PROJECT_DIR$/web/static/css/chat.css" />
         <option value="$PROJECT_DIR$/web/templates/chat.css" />
         <option value="$PROJECT_DIR$/web/templates/index.html" />
-        <option value="$PROJECT_DIR$/web/templates/chat.html" />
-        <option value="$PROJECT_DIR$/web/templates/chat.js" />
         <option value="$PROJECT_DIR$/web/model/entities.py" />
         <option value="$PROJECT_DIR$/web/database/connector.py" />
         <option value="$PROJECT_DIR$/web/templates/crud_users.html" />
         <option value="$PROJECT_DIR$/web/templates/crud_users.js" />
         <option value="$PROJECT_DIR$/web/server.py" />
+        <option value="$PROJECT_DIR$/web/templates/chat.html" />
+        <option value="$PROJECT_DIR$/web/templates/chat.js" />
+        <option value="$PROJECT_DIR$/web/templates/login.css" />
+        <option value="$PROJECT_DIR$/web/templates/login.html" />
       </list>
     </option>
   </component>
@@ -149,6 +118,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -165,7 +135,7 @@
               <item name="code-on-demand-carlos-reategui" type="b2602c69:ProjectViewProjectNode" />
               <item name="code-on-demand-carlos-reategui" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="code-on-demand-carlos-reategui" type="b2602c69:ProjectViewProjectNode" />
@@ -177,7 +147,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Course" />
     </panes>
   </component>
@@ -185,19 +154,24 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/jesus/Documents/GitHubEducation/cs2b01/uniform-interface/web/templates/login.html" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/templates" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/static/css" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/static/css" />
       <recent name="$PROJECT_DIR$/web/templates" />
       <recent name="$PROJECT_DIR$/web/static/js" />
       <recent name="$PROJECT_DIR$/web/static/images" />
       <recent name="$PROJECT_DIR$/web/static" />
-      <recent name="$PROJECT_DIR$/web/static/css" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -225,6 +199,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/web/server.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -250,14 +225,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558536507359</updated>
+      <workItem from="1560435610369" duration="184000" />
+      <workItem from="1560745737336" duration="2251000" />
     </task>
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2435000" />
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="797" extended-state="6" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.14517266" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.14949928" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="DB Browser" order="3" weight="0.32980973" />
       <window_info anchor="bottom" id="Version Control" order="0" />
@@ -267,15 +247,25 @@
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.39937598" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.32761312" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.3319149" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="DB Execution Console" order="11" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="SciView" order="4" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/code_on_demand_carlos_reategui$server.coverage" NAME="server Coverage Results" MODIFIED="1560747910581" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/web/templates/success.html" />
@@ -301,28 +291,12 @@
     <entry file="file://$PROJECT_DIR$/web/templates/crud_messages.js" />
     <entry file="file://$PROJECT_DIR$/web/static/css/model/__init__.py" />
     <entry file="file://$PROJECT_DIR$/web/static/css/fonts/iconic/css/material-design-iconic-font.css" />
-    <entry file="file://$PROJECT_DIR$/web/static/css/main.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/static/vendor/jquery/jquery-3.2.1.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/static/fonts/iconic/css/material-design-iconic-font.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/static/js/main.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/login.css" />
+    <entry file="file://$PROJECT_DIR$/web/static/css/main.css" />
+    <entry file="file://$PROJECT_DIR$/web/static/vendor/jquery/jquery-3.2.1.min.js" />
+    <entry file="file://$PROJECT_DIR$/web/static/fonts/iconic/css/material-design-iconic-font.css" />
+    <entry file="file://$PROJECT_DIR$/web/static/js/main.js" />
     <entry file="file://$PROJECT_DIR$/web/requirements.txt">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/chat.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1174">
-          <caret line="88" column="5" selection-start-line="88" selection-start-column="5" selection-end-line="88" selection-end-column="5" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/model/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -340,10 +314,14 @@
     <entry file="file://$PROJECT_DIR$/web/database/connector.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/crud_users.html">
+    <entry file="db://0a02a647-454c-4dc5-9093-1a0b75ee7c50/objects/schemas/main/tables/messages" />
+    <entry file="db://0a02a647-454c-4dc5-9093-1a0b75ee7c50/consoles/Connection" />
+    <entry file="file://$PROJECT_DIR$/web/templates/crud_chat.js" />
+    <entry file="file://$PROJECT_DIR$/web/templates/crud_chat.html" />
+    <entry file="file://$PROJECT_DIR$/web/templates/chat.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+        <state relative-caret-position="555">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
         </state>
       </provider>
     </entry>
@@ -354,69 +332,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/login.html">
+    <entry file="file://$PROJECT_DIR$/web/templates/chat.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-867">
-          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#1;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#2;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="660">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/templates/login.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="db://0a02a647-454c-4dc5-9093-1a0b75ee7c50/objects/schemas/main/tables/messages">
-      <provider selected="true" editor-type-id="1.DATA">
-        <state row-count="0" readonly="false">
-          <columns>
-            <column name="id" position="0" visible="true" />
-            <column name="content" position="1" visible="true" />
-            <column name="sent_on" position="2" visible="true" />
-            <column name="user_from_id" position="3" visible="true" />
-            <column name="user_to_id" position="4" visible="true" />
-          </columns>
-          <sorting />
-          <content-types />
-        </state>
-      </provider>
-    </entry>
-    <entry file="db://0a02a647-454c-4dc5-9093-1a0b75ee7c50/consoles/Connection">
-      <provider selected="true" editor-type-id="0.CONSOLE">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/chat.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
-        </state>
+        <state relative-caret-position="-76" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="396">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/crud_chat.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/crud_chat.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+        <state relative-caret-position="342">
+          <caret line="137" selection-start-line="137" selection-end-line="137" />
           <folding>
             <element signature="e#0#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/templates/crud_users.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/static/css/login.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/templates/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="88" column="1" selection-start-line="88" selection-start-column="1" selection-end-line="88" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-265">
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#4;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#1;n#div#4;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#2;n#div#4;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

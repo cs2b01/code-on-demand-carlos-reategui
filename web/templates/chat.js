@@ -33,7 +33,7 @@ function whoami(){
                     f = '<div class="alert alert-secondary" role="alert" onclick=loadMessages('+currentUserId+','+response[i].id+') >';
                     f = f + response[i].username;
                     f = f + '</div>';
-                    i = i+1;
+                    i = i + 1;
                     $('#allusers').append(f);
                 });
             },
@@ -46,6 +46,8 @@ function whoami(){
     function loadMessages(user_from_id, user_to_id){
         //alert(user_from_id);
         //alert(user_to_id);
+        /*var element = document.getElementById('sentMessages');
+        element.parentNode.removeChild(element);*/
         currentClickedId = user_to_id;
         $.ajax({
             url:'/messages/'+user_from_id+"/"+user_to_id,
@@ -53,7 +55,15 @@ function whoami(){
             contentType: 'application/json',
             dataType:'json',
             success: function(response){
-                alert(JSON.stringify(response));
+                $('#sentMessages').empty();
+                var i = 0;
+                $.each(response, function(){
+                    f = '<div>';
+                    f = f + response[i].content;
+                    f = f + '</div>';
+                    i = i + 1;
+                    $('#sentMessages').append(f);
+                });
             },
             error: function(response){
                 alert(JSON.stringify(response));
@@ -84,6 +94,4 @@ function whoami(){
                 alert(JSON.stringify(response));
             }
         });
-
-
     }
